@@ -12,13 +12,32 @@ function checkInput(n){
     return true
 }
 
+function randomIntBetween(){
+    const random = Math.floor(Math.random()*(9-0+1));
+    return random
+}
+
+function numberCreation() {
+    let arrayNum = [];   
+    do{
+      let num = randomIntBetween();
+      if(!arrayNum.includes(num)) {
+          arrayNum.push(num);
+      }
+    }while(arrayNum.length < 4)
+    return arrayNum;
+}
+
+
+let arr = numberCreation();
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
-    let num = document.getElementById("number").value;
-    let flag = checkInput(num)  
-    result.innerText = ''
-    if(flag){
-        result.innerText += 'cacio';
+    let sequence ='';
+    
+    let num = document.getElementById("number").value; 
+    result.innerText = '';
+    if(checkInput(num)){
+
     }else{
         result.innerText += 'pepe';
     }
