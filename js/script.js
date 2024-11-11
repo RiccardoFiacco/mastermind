@@ -1,35 +1,7 @@
-function checkInput(n){
-    if(isNaN(n)){
-        console.log("fermato al nan")
-        return false;
-    }
-
-    if(n.length != 4){
-        console.log("fermato al length")
-        return false
-    }
-
-    return true
-}
-
-function randomIntBetween(){
-    const random = Math.floor(Math.random()*(9-0+1));
-    return random
-}
-
-function numberCreation() {
-    let arrayNum = [];   
-    do{
-      let num = randomIntBetween();
-      if(!arrayNum.includes(num)) {
-          arrayNum.push(num);
-      }
-    }while(arrayNum.length < 4)
-    return arrayNum;
-}
-
+import { numberCreation, checkInput } from "./function.js";
 
 let arr = numberCreation();
+console.log(arr)
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
     let sequence ='';
