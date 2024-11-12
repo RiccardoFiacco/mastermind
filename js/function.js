@@ -1,14 +1,7 @@
 export function checkInput(n){
-    if(isNaN(n)){
-        console.log("fermato al nan")
+    if(isNaN(n) || n.length != 4){
         return false;
     }
-
-    if(n.length != 4){
-        console.log("fermato al length")
-        return false
-    }
-
     return true
 }
 
