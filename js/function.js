@@ -28,18 +28,24 @@ export function numberCreation() {
     return arrayNum;
 }
 
-export function checkSequence(num){
+export function checkSequence(num, arr){
     let res = '';
+    let app=[];
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < num.length; j++) {
             if (arr[i]==num[j]){
-                if (i==j){
+                if (i==j ){
+                    if(app.includes(num[j])){                    
+                        res = '';
+                    }
                     res +='X'; 
                 }else{
-                    res+='O'
+                    res+='O';
                 }
+                app.push(num[j])
             }
         }       
     }
     return res
 }
+
