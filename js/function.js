@@ -49,3 +49,24 @@ export function checkSequence(num, arr){
     return res
 }
 
+export function print(n ,s ){
+    result.innerHTML += `   <div class="col-6 bg-red mt-3">
+                                    <div class="number">${n}</div>
+                            </div>
+                            <div class="col-6 bg-red mt-3">
+                                    <div class="text-end">${s}</div>
+                            </div>`
+        
+    }
+    
+    export function printW(){
+    result.innerHTML += `<div class="col-12 bg-red mt-3 text-center">
+                                    <div>HAI VINTO!!!</div>
+                            </div>`
+    }
+    
+    export function error(){
+        result.innerText += `<div class="col-12 bg-red mt-3 text-center">
+                                    <div>non hai inserito un numero di 4 cifre</div>
+                            </div>`;
+    }
