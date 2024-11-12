@@ -27,3 +27,19 @@ export function numberCreation() {
     }while(arrayNum.length < 4)
     return arrayNum;
 }
+
+export function checkSequence(num){
+    let res = '';
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < num.length; j++) {
+            if (arr[i]==num[j]){
+                if (i==j){
+                    res +='X'; 
+                }else{
+                    res+='O'
+                }
+            }
+        }       
+    }
+    return res
+}
