@@ -3,7 +3,7 @@ export function checkInput(n){
     if(isNaN(n) || n.length != 4){
         return false;
     }
-    
+
     let app;
     n = n.split('');
     for(let i = 0; i<4 ; i++){
@@ -46,6 +46,17 @@ export function checkSequence(num, arr){
             }
         }       
     }
+    // for (let i = 0; i < 4; i++) {
+    //     console.log("sono nel loop")
+    //     if(num.includes(arr[i])){
+    //         console.log("include")
+    //         if(arr[i].indexOf() == indexOf(num[i])){
+    //             res +='X'; 
+    //         }else{ 
+    //             res+='O';
+    //         }  
+    //     }
+    // }
     return res
 }
 
