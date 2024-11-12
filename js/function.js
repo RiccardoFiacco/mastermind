@@ -34,12 +34,12 @@ export function checkSequence(num, arr){
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < num.length; j++) {
             if (arr[i]==num[j]){
-                if (i==j ){
+                if (i==j){
                     if(app.includes(num[j])){                    
                         res = '';
                     }
                     res +='X'; 
-                }else{
+                }else if(!app.includes(num[j])){
                     res+='O';
                 }
                 app.push(num[j])
