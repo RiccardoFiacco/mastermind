@@ -46,15 +46,16 @@ export function checkSequence(num, arr){
             }
         }       
     }
-    // for (let i = 0; i < 4; i++) {
-    //     console.log("sono nel loop")
-    //     if(num.includes(arr[i])){
-    //         console.log("include")
-    //         if(arr[i].indexOf() == indexOf(num[i])){
-    //             res +='X'; 
-    //         }else{ 
-    //             res+='O';
-    //         }  
+    //altra soluzione
+    // for (let i = 0; i < num.length; i++) { // Scorro i numeri inseriti dall'utente
+    //     let result = '';
+    //     const arrIndexFound = arr.indexOf(num[i]);
+    //     if (arrIndexFound !== -1) { // Il numero esiste
+    //         if (arrIndexFound === i) {
+    //             result += 'X';
+    //         } else {
+    //             result += 'O';
+    //         }
     //     }
     // }
     return res
